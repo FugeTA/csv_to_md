@@ -73,7 +73,6 @@ def parse_custom_csv_to_md(input_path, output_path):
 
         # タイトル行の判定ロジック
         # 条件: 有効なセルが1つだけ、かつ その内容が特定のキーワードではない場合
-        # ご提示のCSVでは「,,,基本情報,,,,」のように真ん中にポツンとある
         if len(filled_cells) == 1:
             # 前のテーブルがあれば書き出す
             flush_table()
